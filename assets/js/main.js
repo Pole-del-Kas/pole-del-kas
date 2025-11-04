@@ -219,22 +219,4 @@ const desktopImages = [
 
 });
 
-window.addEventListener('load', () => {
-  const mapContainer = document.querySelector('.map-container');
-  if (!mapContainer) return;
-
-  // Small delay to avoid mobile scroll jump
-  setTimeout(() => {
-    const iframe = document.createElement('iframe');
-    iframe.src = mapContainer.dataset.src;
-    iframe.style.width = '100%';
-    iframe.style.height = '100%';
-    iframe.frameBorder = '0';
-    iframe.allowFullscreen = true;
-    iframe.loading = 'lazy';
-    mapContainer.appendChild(iframe);
-  }, 200); // 200ms delay is usually enough
-});
-
-
 })();
