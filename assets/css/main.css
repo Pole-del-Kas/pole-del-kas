@@ -74,6 +74,8 @@ body {
   background-color: var(--background-color);
   font-family: var(--default-font);
    overscroll-behavior-y: contain;
+   min-height: 100vh;
+  min-height: -webkit-fill-available; /* Safari fix */
 }
 
 a {
