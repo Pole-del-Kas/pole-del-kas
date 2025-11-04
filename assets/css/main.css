@@ -783,7 +783,7 @@ section,
 
   section,
   .section {
-    scroll-margin-top: 66px;
+    scroll-margin-top: 0px;
   }
 }
 
