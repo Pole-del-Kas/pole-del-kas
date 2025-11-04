@@ -51,6 +51,21 @@
   scroll-behavior: smooth;
 }
 
+@font-face {
+    font-family: 'Sprite Graffiti Regular';
+    src: url('../fonts/Sprite Graffiti.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Shadow / alternate font */
+@font-face {
+    font-family: 'Sprite Graffiti';
+    src: url('../fonts/Sprite Graffiti Shadow.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /*--------------------------------------------------------------
 # General Styling & Shared Classes
 --------------------------------------------------------------*/
