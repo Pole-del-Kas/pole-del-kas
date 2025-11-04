@@ -98,14 +98,14 @@
   /**
    * Correct scrolling position upon page load for URLs containing hash links.
    */
-  window.addEventListener('load', function(e) {
-   if (window.location.hash) {
-      const section = document.querySelector(window.location.hash);
-      if (section) {
-        section.scrollIntoView({ behavior: 'smooth'});
-      }
+/*  window.addEventListener('load', function(e) {
+  if (window.location.hash) {
+    const section = document.querySelector(window.location.hash);
+    if (section && !section.classList.contains('map-container')) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
   }
-  });
+}); */
 
   /**
    * Navmenu Scrollspy
