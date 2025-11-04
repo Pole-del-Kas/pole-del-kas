@@ -154,20 +154,25 @@ $(document).ready(function() {
       'assets/img/carousel/POLEMERITAS09102022 (13).jpg',
       'assets/img/carousel/lavanda 1.jpg',
       'assets/img/carousel/POLEMERITAS09102022 (14).jpg',
-      
+      'assets/img/carousel/russian layback.jpg',
       'assets/img/carousel/POLEMERITAS09102022 (15).jpg',
+      'assets/img/carousel/plegado.jpg',
       'assets/img/carousel/S07042024M (25).jpg',
+      'assets/img/carousel/reiko.jpg',
       'assets/img/carousel/S07042024M (26).jpg',
+      'assets/img/carousel/retrato.jpg',
       'assets/img/carousel/S07042024M (28).jpg',
-      'assets/img/carousel/S07042024M (30).jpg' 
+      'assets/img/carousel/superman variation.jpg',
+      'assets/img/carousel/S07042024M (30).jpg', 
     ];
 
   const desktopImages = [
     'assets/img/carousel/P23042023 (3).jpg',
+    'assets/img/carousel/lavanda 2.jpg',
     'assets/img/carousel/lady planche.jpg',
     'assets/img/carousel/POLEMERITAS09102022 (16).jpg',
-     'assets/img/carousel/machine gun.jpg',
-    
+    'assets/img/carousel/machine gun.jpg',
+    'assets/img/carousel/marchetti split.jpg',
   ];
 
   function loadCarousel() {
