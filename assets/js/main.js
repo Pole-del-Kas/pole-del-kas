@@ -113,7 +113,7 @@
   let navmenulinks = document.querySelectorAll('.navmenu a');
 
   function navmenuScrollspy() {
-    if (window.innerWidth <= 768) return;
+    if (window.innerWidth <= 900 || /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) return;
     navmenulinks.forEach(navmenulink => {
       if (!navmenulink.hash) return;
       let section = document.querySelector(navmenulink.hash);
