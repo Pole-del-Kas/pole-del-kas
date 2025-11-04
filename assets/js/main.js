@@ -110,27 +110,26 @@
   /**
    * Navmenu Scrollspy
    */
-// Select all nav links and their corresponding sections
-const navLinks = document.querySelectorAll('#navmenu a');
-const sections = Array.from(navLinks).map(link => document.querySelector(link.hash));
+  let navmenulinks = document.querySelectorAll('.navmenu a');
 
-// Create Intersection Observer
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    const id = entry.target.id;
-    const link = document.querySelector(`#navmenu a[href="#${id}"]`);
+  function navmenuScrollspy() {
+    if (window.innerWidth <= 768) return;
+    navmenulinks.forEach(navmenulink => {
+      if (!navmenulink.hash) return;
+      let section = document.querySelector(navmenulink.hash);
+      if (!section) return;
+      let position = window.scrollY + 50;
+      if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
+        document.querySelectorAll('.navmenu a.active').forEach(link => link.classList.remove('active'));
+        navmenulink.classList.add('active');
+      } else {
+        navmenulink.classList.remove('active');
+      }
+    })
+  }
+  window.addEventListener('load', navmenuScrollspy);
+  document.addEventListener('scroll', navmenuScrollspy);
 
-    if (entry.isIntersecting) {
-      navLinks.forEach(l => l.classList.remove('active'));
-      link.classList.add('active');
-    }
-  });
-}, {
-  threshold: 0.5 // section is "active" when 50% of it is visible
-});
-
-// Observe each section
-sections.forEach(section => observer.observe(section));
 
  
 $(document).ready(function() {
