@@ -1084,7 +1084,40 @@ h1 {
 
 @media (max-width: 575px) {
   .about img {
-  border-radius: 20px;
-  
+    border-radius: 20px;
+  }
 }
+
+.image-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 60px;
+  flex-wrap: wrap;
+}
+
+.image-row a,
+.image-row img {
+  flex: 1 1 50%;             /* each takes equal space */
+  max-width: 50%;          /* cap width to 50% */
+  text-align: center;      /* centers <a> content */
+}
+
+.image-row img {
+  width: 100%;             /* make image fill its half */
+  height: auto;
+  display: block;
+  margin: 0 auto;          /* ensures image is centered in its space */
+}
+
+@media (max-width: 768px) {
+  .image-row a,
+  .image-row img {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .image-row .ticket-first-class {
+    padding-top: 20px; /* 👈 add spacing above the second image */
+  }
 }
