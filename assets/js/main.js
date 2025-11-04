@@ -137,35 +137,35 @@ $(document).ready(function() {
   const $carousel = $('.poledance-carousel');
 
   const mobileImages = [
-      'assets/img/carousel/Copia de S07042024M (22).jpg',
-      'assets/img/carousel/cupido.jpg',
-      'assets/img/carousel/P23042023 (2).jpg',
-      'assets/img/carousel/drama queen.jpg',
-      'assets/img/carousel/P23042023 (5).jpg',
-      'assets/img/carousel/flexi.jpg',
-      'assets/img/carousel/POLEMERITAS09102022 (13).jpg',
-      'assets/img/carousel/lavanda 1.jpg',
-      'assets/img/carousel/POLEMERITAS09102022 (14).jpg',
-      'assets/img/carousel/russian layback.jpg',
-      'assets/img/carousel/POLEMERITAS09102022 (15).jpg',
-      'assets/img/carousel/plegado.jpg',
-      'assets/img/carousel/S07042024M (25).jpg',
-      'assets/img/carousel/reiko.jpg',
-      'assets/img/carousel/S07042024M (26).jpg',
-      'assets/img/carousel/retrato.jpg',
-      'assets/img/carousel/S07042024M (28).jpg',
-      'assets/img/carousel/superman variation.jpg',
-      'assets/img/carousel/S07042024M (30).jpg', 
-    ];
+  'assets/img/carousel/Copia de S07042024M (22).webp',
+  'assets/img/carousel/cupido.webp',
+  'assets/img/carousel/P23042023 (2).webp',
+  'assets/img/carousel/drama queen.webp',
+  'assets/img/carousel/P23042023 (5).webp',
+  'assets/img/carousel/flexi.webp',
+  'assets/img/carousel/POLEMERITAS09102022 (13).webp',
+  'assets/img/carousel/lavanda 1.webp',
+  'assets/img/carousel/POLEMERITAS09102022 (14).webp',
+  'assets/img/carousel/russian layback.webp',
+  'assets/img/carousel/POLEMERITAS09102022 (15).webp',
+  'assets/img/carousel/plegado.webp',
+  'assets/img/carousel/S07042024M (25).webp',
+  'assets/img/carousel/reiko.webp',
+  'assets/img/carousel/S07042024M (26).webp',
+  'assets/img/carousel/retrato.webp',
+  'assets/img/carousel/S07042024M (28).webp',
+  'assets/img/carousel/superman variation.webp',
+  'assets/img/carousel/S07042024M (30).webp'
+];
 
-  const desktopImages = [
-    'assets/img/carousel/P23042023 (3).jpg',
-    'assets/img/carousel/lavanda 2.jpg',
-    'assets/img/carousel/lady planche.jpg',
-    'assets/img/carousel/POLEMERITAS09102022 (16).jpg',
-    'assets/img/carousel/machine gun.jpg',
-    'assets/img/carousel/marchetti split.jpg',
-  ];
+const desktopImages = [
+  'assets/img/carousel/P23042023 (3).webp',
+  'assets/img/carousel/lavanda 2.webp',
+  'assets/img/carousel/lady planche.webp',
+  'assets/img/carousel/POLEMERITAS09102022 (16).webp',
+  'assets/img/carousel/machine gun.webp',
+  'assets/img/carousel/marchetti split.webp'
+];
 
   function loadCarousel() {
     const isMobile = window.matchMedia('(max-width: 768px)').matches;
