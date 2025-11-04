@@ -145,6 +145,25 @@ function preventBottomJump() {
   }
 }
 
+let isAtBottom = false;
+
+function checkBottom() {
+  const scrollPosition = window.scrollY + window.innerHeight;
+  const pageHeight = document.documentElement.scrollHeight;
+  isAtBottom = scrollPosition >= pageHeight - 1; // 1px tolerance
+}
+
+document.addEventListener('scroll', checkBottom, { passive: true });
+
+// Example: override any scrollIntoView calls if at bottom
+const originalScrollIntoView = Element.prototype.scrollIntoView;
+Element.prototype.scrollIntoView = function(...args) {
+  if (!isAtBottom) {
+    return originalScrollIntoView.apply(this, args);
+  }
+  // ignore if at bottom
+};
+
 window.addEventListener('scroll', preventBottomJump);
 
  
