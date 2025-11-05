@@ -210,14 +210,14 @@ const desktopImages = [
   loadCarousel();
 
   // Detect screen size changes
-  /* let resizeTimer;
+  let resizeTimer;
   $(window).on('resize', function() {
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout(() => {
       loadCarousel();
     }, 100); // small delay to prevent rapid reloads
   });
- */
+ 
   /*--------------------------------------------------------------
   # End of Carousel Section
   --------------------------------------------------------------*/
